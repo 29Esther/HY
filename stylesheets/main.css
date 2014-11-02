@@ -7,10 +7,10 @@ body {
 	height: 680px;
 	width:100%;
 	position:relative;
-	background:url(../images/clouds.png) center top no-repeat
+	background:url(https://cloud.githubusercontent.com/assets/5023687/4875409/d4884750-6295-11e4-80ee-8b1130a04cab.png) center top no-repeat
 }
 .dialog {
-	background:url(../images/dialog.png) no-repeat;
+	background:url(https://cloud.githubusercontent.com/assets/5023687/4875410/d49527c2-6295-11e4-9acc-2a9711ae11cf.png) no-repeat;
 	width:425px;
 	height:190px;
 	position:absolute;
