@@ -6,10 +6,28 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="all">
     <script src="javascripts/main.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
   </head>
   <body>
     <div class="container">
     </div>
+    <canvas id="myCanvas" height="500" width="1000" style="margin-left: auto; margin-right: auto; display: block;"></canvas>
+    <script type="text/javascript" src="javascripts/bubbles.js"></script>
+    <script type="text/javascript" defer>
+      var myName = "Codecademy";
+
+      var red = [0, 100, 63];
+      var orange = [40, 100, 60];
+      var green = [75, 100, 40];
+      var blue = [196, 77, 55];
+      var purple = [280, 50, 60];
+      var letterColors = [red, orange, green, blue, purple];
+
+      drawName(myName, blue);
+      bubbleShape = 'circle';
+
+      bounceBubbles();
+    </script>
     <div class="dialog">
       <p class="text"></p>
     </div>
