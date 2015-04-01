@@ -14,9 +14,9 @@
 		  $.ajax({
 		    type: "GET",
 		    //同域文件正常访问。从下面网址复制过来的
-		    url: "jquery_xml.xml",
+		    //url: "jquery_xml.xml",
 		    //网址，跨域访问就不行了
-		    //url:"http://fanyi.youdao.com/openapi.do?keyfrom=HYAlways&key=276018816&type=data&doctype=xml&version=1.1&q=test",
+		    url:"http://fanyi.youdao.com/openapi.do?keyfrom=HYAlways&key=276018816&type=data&doctype=xml&version=1.1&q=test",
 		    dataType: "xml",
 		    success: parseXml
 		  });
