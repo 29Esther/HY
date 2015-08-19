@@ -1,51 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="btn.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <script type="text/javascript" src="order.js"></script>
 </head>
 <body>
-	<button id="Butto"> good luck </button>
-	<div id="output"></div>
-	<script type="text/javascript">
-		$(document).ready(function()
-		{
-		  $.ajax({
-		    type: "GET",
-		    //同域文件正常访问。从下面网址复制过来的
-		    //url: "jquery_xml.xml",
-		    //网址，跨域访问就不行了
-		    url:"http://fanyi.youdao.com/openapi.do?keyfrom=HYSPEC&key=2146043980&type=data&doctype=xml&version=1.1&q=test",
-		    dataType: "xml",
-		    success: parseXml
-		  });
-
-		  	//用jsonp就不能用返回的xml文件就会报错惹。。TAT
-			/*$.ajax({
-				type:"GET",
-				url:"http://fanyi.youdao.com/openapi.do?keyfrom=HYAlways&key=276018816&type=data&doctype=xml&version=1.1&q=test",
-				dataType: 'jsonp', 
-            jsonp: 'jsoncallback', //默认callback
-            timeout: 5000, 
-            success: parseXml
-        	});*/
-		});
-
-		function parseXml(xml)
-		{
-		  	//find and print
-		  	$(xml).find("basic").each(function()
-		  	{
-		  		$(this).find("ex").each(function()
-		  		{
-		  			$("#output").append($(this).text() + "<br />");
-		  		});
-
-			  	$("#output").append("<br />");
-
-			});
-		}
-	</script>
+  <div class="image-panel">
+    <img src="audi_white.jpg">
+    <div class="car-name">奥迪R8（白）</div>
+  </div>
+  <div class="panel order-panel">
+    <div class="car-type">
+      <div class="type-title">车型</div>
+      <div class="type-list">
+        <button id="audi" type="button" class="btn-primary btn-unselected" onclick="selCar(this)">奥迪</button>
+        <button id="bwm" type="button" class="btn-primary btn-unselected" onclick="selCar(this)">宝马</button>
+        <button id="porsche" type="button" class="btn-primary btn-unselected" onclick="selCar(this)">保时捷</button>
+        <button id="ford" type="button" class="btn-primary btn-unselected" onclick="selCar(this)">福特</button>
+        <button id="chevrolet" type="button" class="btn-primary btn-unselected" onclick="selCar(this)">雪弗莱</button>
+        <hr>
+      </div>
+    </div>
+    <div class="color">
+      <div class="color-title">颜色</div>
+      <div class="color-list">
+        <button id="white" type="button"class="btn-primary btn-unselected"onclick="">白色</button>
+        <button id="orange" type="button"class="btn-primary btn-unselected"onclick="">橙色</button>
+        <button id="yellow" type="button"class="btn-primary btn-unselected"onclick="">黄色</button>
+        <button id="black" type="button"class="btn-primary btn-unselected"onclick="">黑色</button>
+        <button id="red" type="button"class="btn-primary btn-unselected"onclick="">红色</button>
+        <button id="gold" type="button"class="btn-primary btn-unselected"onclick="">金色</button>
+        <button id="silvery" type="button"class="btn-primary btn-unselected"onclick="">银色</button>
+      </div>
+      <div class="btn-submit">下单</div>
+    </div>
+  </div>
 </body>
 </html>
+
+

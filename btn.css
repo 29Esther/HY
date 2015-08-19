@@ -1,0 +1,75 @@
+body{
+	background-color: #EEEEEE;
+	margin: 0;
+	padding: 0;
+}
+hr{
+	height: 1px;
+	border:none;
+	border-top:1px solid #CCCCCC;
+	margin-top: 5px;
+}
+img{
+	width: 100%;
+}
+.type-list,.type-title,.color-list,.color-title,.car-name,.image-panel{
+	background-color: white;
+}
+.car-name{
+	font-size: 14px;
+	font-weight: 600;
+	color: #666666;
+	padding: 6px 0;
+	margin: 4px 22px;
+}
+.panel {
+	margin-top:3%;
+	font-size: 12px;
+	padding: 12px 16px;
+	border-radius: 3px;
+	background-color: white;
+}
+.type-title,.color-title{
+	margin-left: 10px;
+	color: #888888;
+	font-size: 12px;
+}
+.order-panel {
+	padding: 1px 0;
+}
+.car-type,.color{
+	margin: 10px;
+	margin-bottom: 0px;
+	background-color: white;
+}
+.btn-primary {
+	padding: 6px 14px;
+	width: 70px;
+	height: 28px;
+	margin: 8px 6px;
+	display:inline-block;
+	font-size: 13px;
+	border: 1px solid;
+	border-radius: 4px;
+}
+.btn-unselected{
+	background: white;
+	color: #666666;
+	border-color: #666666;
+	outline: none;
+}
+.btn-selected{
+	background: orange;
+	color: white;
+	outline: none;
+	border-color: orange;
+}
+.btn-submit{
+	width: 100%;
+	margin-bottom: 3%;
+	background-color: orange;
+	font-size: 20px;
+	text-align: center;
+	padding:10px 0;
+	color: white;
+}
