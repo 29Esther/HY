@@ -73,3 +73,8 @@ img{
 	padding:10px 0;
 	color: white;
 }
+.btn-disabled{
+	background-color: #EEEEEE;
+	color: #666666;
+	border-color: #666666;
+}
