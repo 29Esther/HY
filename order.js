@@ -1,5 +1,5 @@
 var connection = [["car/audi_white.jpg","car/bwm_white.jpg",0,"car/ford_white.jpg",0],[0,0,0,"car/ford_orange.jpg",0],[0,0,0,0,"car/chevrolet_yellow.jpg"],["car/audi_black.jpg",0,"car/porsche_black.jpg",0,0],["car/audi_red.jpg","car/bwm_red.jpg","car/porsche_red.jpg",0,"car/chevrolet_red.jpg"],[0,"car/bwm_gold.jpg",0,0,0],[0,0,"car/porsche_silvery.jpg","car/ford_silvery.jpg",0]];
-var car_name = [["奥迪R8 （白）","宝马335i （白）",0,"福特野马 （白）",0],[0,0,0,"福特野马 （橙）",0],[0,0,0,0,"雪弗兰科迈罗 （黄）"],["奥迪R8 （黑）",0,"保时捷Panamera （黑）",0,0],["奥迪R8 （红）","宝马335i （红）","保时捷Panamera （红）",0,"car/雪弗兰科迈罗 （红）"],[0,"宝马335i （金）",0,0,0],[0,0,"保时捷Panamera （银）","福特野马 （银）",0]]
+var car_name = [["奥迪R8 （白）","宝马335i （白）",0,"福特野马 （白）",0],[0,0,0,"福特野马 （橙）",0],[0,0,0,0,"雪弗兰科迈罗 （黄）"],["奥迪R8 （黑）",0,"保时捷Panamera （黑）",0,0],["奥迪R8 （红）","宝马335i （红）","保时捷Panamera （红）",0,"雪弗兰科迈罗 （红）"],[0,"宝马335i （金）",0,0,0],[0,0,"保时捷Panamera （银）","福特野马 （银）",0]]
 var lastType = "type100";
 var lastColor = "color100";
 var car_type = -1;
