@@ -5,30 +5,47 @@ body{
 }
 .background{
 	width: 100%;
-	background: url("./car/audi_black.jpg");
+	background: url("u6.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+    background-size:cover;
 	height: 100%;
-	display: -webkit-box;   
-  	display: -moz-box;   
-  	display: -ms-flexbox;   
-  	display: -webkit-flex;   
-  	display: flex;   
-  	-webkit-box-align: center;   
-    -moz-box-align: center;   
-    -ms-flex-align: center;   
-  	-webkit-align-items: center;   
-    align-items: center;   
-  	-webkit-box-pack: center;   
-    -moz-box-pack: center;   
-    -ms-flex-pack: center;   
-  	-webkit-justify-content: center;   
-    justify-content: center;   
 }
 .welcome_button{
-	width: 80%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+	width: 50%;
 	background-color: orange;
 	font-size: 20px;
 	text-align: center;
 	padding:10px 0;
 	color: white;
-	top: 20px;
+    border-radius: 10px;
+}
+.icons {
+    height: 5%;
+    bottom: 2%;
+    width: 100%;
+    position: absolute;
+}
+.icon_sap {
+    background: url("u10.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    position: relative;
+    left: -70px;
+}
+.icon_sia {
+    background: url("u12.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    position: relative;
+    right: -39%;
 }

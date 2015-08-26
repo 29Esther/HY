@@ -9,17 +9,16 @@ function startcount(){　
 	}
 	else
 	{
-		window.location = null;
+		window.location = ;
 	}
 }
 
 var storage = window.localStorage;
-storage["OrderNum"] = 2;
 if (!storage.getItem("OrderNum")) 
 {
 	startcount();
 }
 else 
 {
-	window.location = null;
+	window.location = ;
 }
